@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right,#f5e5c0, #fb75db); 
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+    header {
+      background-color: #333;
+      color: rgb(202, 243, 199);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      width: 100%;
+    }
+    nav {
+      display: flex;
+      align-items: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+    .menu-icon {
+      font-size: 24px;
+      cursor: pointer;
+      margin-right: 20px;
+    }
+    main {
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      max-width: 100%; /* Adjusted max-width for better mobile display */
+      width: 100%;
+      flex-wrap: wrap; /* Allow items to wrap when necessary */
+      justify-content: center; /* Center content horizontally */
+    }
+    .recipe-info {
+      background-color: #f81e63; /* Added background color */
+      text-align: left;
+      margin: 15px 20px; /* Adjusted margin to bring the elements closer */
+      flex: 0 0 auto; /* Adjusted flex basis to auto for smaller size */
+      max-width: 100%; /* Adjusted max-width for better mobile display */
+      padding: 20px; /* Added padding to match the main padding */
+      border-radius: 5px; /* Added border radius */
+    }
+    .recipe-image {
+      flex: 0 0 40%; /* Adjusted flex basis to 40% for image */
+      margin-right: 20px; /* Adjusted margin to bring the elements closer */
+    }
+    .recipe-image img {
+      max-width: 70%;
+      height: auto;
+    }
+    .order-link {
+      display: inline-block;
+      background-color: #f81e63;
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+      border-radius: 0px;
+      padding: 10px; /* Added padding for better touch target */
+      position: relative; /* Added position relative */
+    }
+    .order-link::after {
+      content: url("images/icons8-arrow-30.png"); /* Image path */
+      margin-left: 5px; /* Adjust the spacing between text and image */
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      main {
+        flex-direction: column; /* Change to column layout on smaller screens */
+      }
+      .recipe-info, .recipe-image {
+        margin: 15px auto; /* Center align on smaller screens */
+        text-align: center; /* Center align text */
+        flex: 0 0 80%; /* Adjusted flex basis for smaller screens */
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="recipe-image">
+      <img src="images/recipe.jpg" alt="Recipe Image">
+    </div>
+    <div class="recipe-info">
+      <b><h2>DHOKLA<br></h2></b>
+      <p>Dhokal Recipe</p>
+      <div class="order-link"> <b>Click me</b></div>
+    </div>
+  </main>
+</body>
+</html>

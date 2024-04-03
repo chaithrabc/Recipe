@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Website</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Additional CSS for positioning the image */
+    main {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      text-align: left;
+      margin-left: 100px;
+    }
+
+    main p {
+      flex: 1;
+      max-width: 50%;
+      margin-right: 20px;
+      text-align: left;
+      font-size: 20px;
+      margin-left: 0px;
+    }
+    main h1{
+      font-size: 50px;
+    }
+    main img {
+      max-width: 50%;
+      height: auto; /* Ensures the aspect ratio is maintained */
+      margin-top: 0px;
+    }
+
+    /* Set the height of the image */
+    @media only screen and (min-width: 601px) {
+      main img {
+        height: 650px; /* Adjust as needed */
+      }
+    }
+
+    /* Mobile responsiveness */
+    @media only screen and (max-width: 600px) {
+      main {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      main p {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+        text-align: center; /* Centering text on mobile */
+      }
+
+      main img {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-center">
+      <nav><h1><b>
+        <a href="#">Home</a>
+        <a href="#">Order</a>
+        <a href="#">Food</a>
+        <a href="#">Restaurant</a>
+        <a href="#">Testimonials</a>
+        <a href="#">Contact Us</a>
+      </h1></nav>
+    </div>
+    <div class="menu-icon">&#9776;</div>
+  </header>
+  <main>
+    <div>
+      <h1><b>DHOKLA</b></h1>
+      <p>Dhokla has its origins in the Indian state of Gujarat, where it has been enjoyed for centuries as a traditional snack. 
+        It has long been a staple in Gujarati cuisine and is now popular across India and worldwide. It gained recognition as a
+        healthy and flavorful snack. Its popularity has spread beyond Gujarat, becoming a beloved dish in Indian households and 
+        a favorite street food item. Dhokla's simplicity, versatility, and nutritional benefits have contributed to its enduring 
+        popularity throughout history.
+        </p>
+      <a href="recipe2.html" class="button">Click Me</a>
+    </div>
+    <img src="images/dhokla-recipe.jpg" alt="Recipe 2 Image">
+  </main>
+</body>
+</html>
